@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install required packages
@@ -9,7 +9,7 @@ RUN apt-get update && apt-get dist-upgrade -y && apt-get autoremove --purge -y \
       libsdl1.2-dev xterm \
       make xsltproc docbook-utils fop dblatex xmlto \
       autoconf automake libtool libglib2.0-dev libarchive-dev \
-      python-git \
+      python3-git \
       locales iproute2 iputils-ping vim zsh cpio
 
 # Locales
